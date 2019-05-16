@@ -1,0 +1,19 @@
+<p>
+  index works!
+</p>
+
+<form>
+  <label for="file">Choose File: </label>
+  <input name="file" formControlName="file" id="file" type="file" (change)="handleFileInput($event.target.files)"><br>
+ </form>
+
+
+  <img src ="{{ image }}">
+
+  <audio id="audio" controls>
+    <source id="audioSource" src="{{ sound }}" type="audio/mpeg">
+  Your browser does not support the audio element.
+  </audio>
+
+
+<google-chart [data]="columnChart"></google-chart>
